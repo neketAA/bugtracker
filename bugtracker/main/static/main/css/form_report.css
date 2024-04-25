@@ -1,0 +1,217 @@
+main .report_form {
+    float: left;
+    width: 45%;
+    background: #FFFFFF;
+
+    padding-right: 50px;
+    padding-left: 50px;
+    height: auto;
+    padding-bottom: 25px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    text-align: left;
+}
+
+.report_form
+{
+    box-shadow: 0px 6px 50px rgba(93, 93, 93, 0.7);
+    border-radius: 20px;
+    transition: 0.2s;
+    margin-left: 30%;
+}
+.report_form:hover
+{
+    box-shadow: 0px 6px 50px rgba(152, 183, 255, 0.7);
+}
+.form_h1
+{
+    font-size: 35px;
+    color: #043268;
+    font-weight: bold;
+    text-align: center;
+}
+.form-control
+{
+    border-radius: 5px;
+    border: 2px solid silver;
+}
+
+.text_boxes
+{
+    height: 100px;
+    width: 100%;
+    border: 2px solid silver;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding-left: 5px;
+}
+.text_boxes_input
+{
+    padding-left: 5px;
+}
+select
+{
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.form_bugrep
+{
+    width: 30%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    box-shadow: 0px 6px 50px rgba(93, 93, 93, 0.7);
+    border-radius: 20px;
+    height:auto;
+    transition: 0.2s;
+    text-align: left;
+    padding-top: 16px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 16px;
+}
+.form_report
+{
+    border-radius: 20px;
+    float: left;
+    width: 79%;
+    margin-left: 350px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    padding-bottom: 25px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    text-align: left;
+    transition: 0.2s;
+}
+.form_bugrep:hover
+{
+    box-shadow: 2px 2px 4px rgba(70, 70, 70, 0.4);
+    transform: scale(1.02);
+}
+.a_form{
+    text-decoration: none;
+    font-weight: bold;
+}
+.form_info_text
+{
+    float: left;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 60%;
+    background: #FFFFFF;
+    margin-left: 25%;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 25px;
+    box-shadow: 0px 6px 50px rgba(93, 93, 93, 0.7);
+    padding-bottom: 20px;
+    border-radius: 20px;
+    text-align: left;
+    transition: 0.2s;
+    color: #002038;
+}
+.status_form
+{
+    display: block;
+    height: auto;
+    background: #247FFF;
+    border-radius: 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    width: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-left: 37%;
+    margin-top: 25px;
+    transition: 0.2s;
+    align-items: center;
+    text-align: center;
+}
+.report_form br {
+    color: #ffffff; /* Красный цвет текста */
+    font-weight: bold;
+}
+
+.form_info
+{
+    float: left;
+    width: 40%;
+    margin-top: 12px;
+    background: #FFFFFF;
+    margin-left: 35%;
+    padding-right: 50px;
+    padding-left: 50px;
+    box-shadow: 0px 6px 50px rgba(93, 93, 93, 0.7);
+    padding-bottom: 20px;
+    border-radius: 20px;
+    text-align: left;
+    transition: 0.2s;
+    color: #002038;
+}
+.text_forma
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.from_p{
+    color: #939393;
+}
+.p_border
+{
+    border: 2px solid #dedede;
+    border-radius: 5px;
+}
+.form_info:hover
+{
+    box-shadow: 0px 6px 50px rgba(152, 183, 255, 0.7);
+    transform: scale(1.001);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

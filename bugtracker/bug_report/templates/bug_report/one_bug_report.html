@@ -1,0 +1,64 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}Информация в сообщении - {{ bug_report.title }}{% endblock %}
+
+{% block content %}
+    <div class="form_info">
+        <h1 class="h1-login">Репорт</h1>
+        <form method="post" action="{% url 'update_bug_status' pk_bug_report=bug_report.pk %}">
+            <h3>
+                {% csrf_token %}
+                Название репорта - {{bug_report.title}}<br> Пользователь - {{bug_report.user}}<br>
+                <select name="status">
+                    <option value="O">Открыто</option>
+                    <option value="W">В работе</option>
+                    <option value="T">Тестирование</option>
+                    <option value="D">Выполнено</option>
+                </select>
+                <div class="text_forma">
+                    <div>
+                        <p class="from_p">Стратус репорта:</p>
+                        <p class="p_border"> -{{bug_report.priority}}</p>
+                    </div>
+                    <div>
+                        <p class="from_p">Приоритет репорта:</p>
+                         <p class="p_border">-{{bug_report.seriousness}}</p>
+                    </div>
+                    <div>
+                        <p class="from_p">Описание репорта:</p>
+                        <p class="p_border">- {{bug_report.description}}</p>
+                    </div>
+                    <div>
+                        <p class="from_p">Шаги воспроизведения бага:</p>
+                        <p class="p_border">- {{bug_report.playback_steps}}</p>
+                    </div>
+                    <div>
+                        <p class="from_p">Фактический результат:</p>
+                        <p class="p_border">Фактический результат - {{bug_report.actual_result}}</p>
+                    </div>
+                    <div>
+                        <p class="from_p">Ожидаемый результат:</p>
+                         <p class="p_border">- {{bug_report.expected_result}}</p>
+                    </div>
+                    <div>
+                        <p class="from_p">Окружение:</p>
+                         <p class="p_border">- {{bug_report.context}}</p>
+                    </div>
+                {% if bug_report.file %}
+                </div>
+                    <a href="{% url 'download_log_file' pk_bug_report=bug_report.pk %}">Скачать файл лога</a>
+                {% else %}
+                    <p class="from_p">Логи:</p>
+                    <p class="p_border">Файл лога не был предоставлен.</p>
+                {% endif %}
+                <div>
+                        <p class="from_p"> Дополнительная информация:</p>
+                         <p class="p_border">-{{bug_report.more_information}}</p>
+                </div>
+
+                 <button type="submit" class="status_form">Изменить статус</button>
+            </h3>
+        </form>
+    </div>
+{% endblock %}

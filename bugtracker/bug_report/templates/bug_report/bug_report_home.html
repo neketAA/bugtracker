@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}Ваши сообщения{% endblock %}
+
+{% block content %}
+<h1 class="form_h1">Ваши репорты</h1>
+    <div class="form_report">
+            {% for bug_report in bug_reports %}
+                <div class="form_bugrep">
+                    <h3><a href="{{ bug_report.get_url }}" class="a_form">{{bug_report.title}}</a></h3>
+                    <p>{{bug_report.status}}</p>
+                    <p>{{bug_report.priority}}</p>
+                    <p>{{bug_report.seriousness}}</p>
+                    <p>{{bug_report.description}}</p>
+                </div>
+            {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}Создание сообщения об ошибке{% endblock %}
+
+{% block content %}
+    <div class="report_form">
+        <h1 class="form_h1">Форма Репорта</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form.as_p}}
+            <span>{{error}}</span>
+            <a type="submit" ><button type="submit" class="avtor-btn">Отправить репорт</button></a>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block content %}
+<div class="block">
+        <div class="register-form-container">
+                <h1>Форма регистрации</h1>
+            {% csrf_token %}
+        {{ form.as_p }}
+        {{ form.errors }}
+        <button type="submit" class="avtor-btn">Авторизоваться</button>
+                <p class="ili">или</p>
+        <a href="{% url 'login' %}" class="button" id="a-regisrer">Уже зарегистрированы?</a>
+        </div>
+
+
+</div>
+{% endblock %}
